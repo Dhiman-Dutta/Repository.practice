@@ -1,0 +1,15 @@
+# A list of user accounts, their subscription plan, and hours watched this month
+users = [
+    {"username": "alpha_user", "plan": "Premium", "hours_watched": 42},
+    {"username": "gamer99", "plan": "Free", "hours_watched": 15},
+    {"username": "cinephile_88", "plan": "Premium", "hours_watched": 68},
+    {"username": "casual_watcher", "plan": "Basic", "hours_watched": 5},
+    {"username": "binge_master", "plan": "Premium", "hours_watched": 95},
+    {"username": "stream_dream", "plan": "Free", "hours_watched": 22}
+]
+filtered_users = filter(lambda x: x["plan"] == "Free", users)
+print(list(filtered_users))
+mapped_users = map(lambda x: f"{x['username']}, {x['plan']}, {x['hours_watched'] + 5}", users)
+print(list(mapped_users))
+new_users = [x for x in users if x["hours_watched"] > 30]
+print(new_users)
