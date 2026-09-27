@@ -1,0 +1,32 @@
+print("Welcome to your mini atm!")
+print("Please add your funds!")
+while True:
+	try:
+		Add_funds = int(input("Type the required amount of funds here :"))
+		print(f"Funds added, {Add_funds}")
+		break
+	except ValueError:
+		print("Invalid number")
+		continue
+while True:
+		Deposit_or_withdraw = (input("Type d for deposit or w for withdrawing funds or q to quit :"))
+		if Deposit_or_withdraw not in ["d", "w", "q"]:
+		    print("Invalid letter")
+		if Deposit_or_withdraw == "q":
+		    break
+while True:
+		if Deposit_or_withdraw == "d":
+		    try:
+		    	Deposit = int(input("Enter the funds you want to deposit :"))
+		    except ValueError:
+		        print("Invalid number")
+		        continue
+		if Deposit_or_withdraw == "w":
+			try:
+			    Withdraw = int(input("Enter the funds you want to withdraw : "))
+			except ValueError:
+				print("Invalid number")
+	
+		
+	    
+	
