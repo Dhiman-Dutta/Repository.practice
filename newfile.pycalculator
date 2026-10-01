@@ -1,0 +1,35 @@
+num1 = int(input("Enter a number :"))
+num2 = int(input("Enter a number :"))
+operation = (input("Enter an operation"))
+if operation == "+":
+    print(num1 + num2)
+elif operation == "-":
+    print(num1 - num2)
+elif operation == "":
+    print(num1 * num2)
+elif operation == "/":
+    print(num1/num2)
+while operation not in ["+" , "-" , "" , "/"]:
+    print("invalid option")
+    num1 = int(input("Enter a number :"))
+    num2 = int(input("Enter a number :"))
+    operation = (input("Enter an operation"))
+    if operation == "+":
+        print(num1 + num2)
+    elif operation == "-":
+        print(num1 - num2)
+    elif operation == "*":
+        print(num1 * num2)
+    elif operation == "/":
+        print(num1/num2)
+while operation in ["+" , "-" , "*" , "/"]:
+    num1 = int(input("Enter a number :"))          num2 = int(input("Enter a number :"))
+    operation = (input("Enter an operation"))
+    if operation == "+":
+        print(num1 + num2)
+    elif operation == "-":
+        print(num1 - num2)
+    elif operation == "*":
+        print(num1 * num2)
+    elif operation == "/":
+        print(num1/num2)
