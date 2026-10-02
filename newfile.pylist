@@ -1,0 +1,21 @@
+# 1. Our starting list of video game scores
+scores = [120, 45, 80, 200, 30, 150]
+
+# 2. Filter: Keep only high scores greater than 50
+# Tweak tip: Try changing 50 to 100!
+good_scores = filter( lambda x: x > 100, scores)
+
+# 3. Map: Give everyone a 10-point bonus
+# Tweak tip: Try changing "+ 10" to "* 2" to double them!
+bonus_scores = map(lambda x: x*2,  good_scores)
+
+# 4. Sorted: Sort them from smallest to biggest
+# Tweak tip: Add "reverse=True" inside sorted() to go biggest to smallest!
+final_scores = sorted(bonus_scores, reverse=True)
+
+# 5. Print the final beautiful list
+print("Final Scores:", final_scores)
+# Output right now: [55, 90, 130, 160, 210]
+Toys = ["Royan, Iqbal, Gourav"]
+filtered_toys = filter(lambda Toys: len(Toys) > 5, Toys)
+print(list(filtered_toys))
